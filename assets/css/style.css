@@ -125,7 +125,7 @@ header .wrapper {
   justify-content: space-between;
 }
 
-.menu { flex-basis: 44%; }
+.menu { flex-basis: 46%; }
 
 .hamburger {
   width: 32px;
@@ -204,10 +204,66 @@ nav li:not(:last-child) a { margin-right: 50px; }
 /*=================================
   main styling starts here
 =================================*/
+/*banner style start*/
+
+.latestProducts ul ,
+.latestProducts .wrapper div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin-top: 28px;
+  color: #fff;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.banner .wrapper { 
+  width: 100%; 
+  position: relative;
+}
+
+.slider div {
+  position: absolute;
+  top : 50%;
+  left: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(-50%,-50%);
+}
+
+.slider li:not(:first-child) { display: none; }
+
+.slider span { 
+  color: #ef3e3b;
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+/*banner style end*/
+
+h3 { 
+  padding-bottom: 21px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
 
 
 
+.latestProducts img { max-width: 334px; }
 
+.latestProducts li { flex-basis: 32%; }
+
+.latestProducts .wrapper div:first-of-type {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 55px;
+}
 
 
 
