@@ -243,8 +243,6 @@ h2 {
   transform: translate(-50%,-50%);
 }
 
-.slider li:not(:first-child) { display: none; }
-
 .slider span { 
   color: #ef3e3b;
   font-size: 20px; 
