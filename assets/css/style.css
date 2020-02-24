@@ -234,7 +234,7 @@ h2 {
   position: relative;
 }
 
-.slider div {
+.bannerText {
   position: absolute;
   top : 50%;
   left: 50%;
@@ -243,7 +243,7 @@ h2 {
   transform: translate(-50%,-50%);
 }
 
-.slider span { 
+.bannerText span { 
   color: #ef3e3b;
   font-size: 20px; 
   font-weight: bold;
