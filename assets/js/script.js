@@ -13,3 +13,18 @@ if (navbar.style.display === "block") {
   }
 	hamburger.classList.toggle('open');
 }
+
+    // $(document).ready(function(){
+    //   $('.slider').slick();
+    // });
+
+
+$(window).on('load', function() {
+
+$('.bannerSlider').slick({
+  dots: true,    
+  arrows : false ,
+  autoplay: true,
+  autoplaySpeed: 2000
+});
+})
