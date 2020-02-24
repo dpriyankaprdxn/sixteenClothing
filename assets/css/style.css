@@ -229,10 +229,11 @@ h2 {
   font-weight: bold;
 }
 
-.banner .wrapper { 
-  width: 100%; 
-  position: relative;
-}
+.slick-dots {  bottom : 50px; }
+
+.banner .wrapper {   width: 100%; }
+
+.bannerSlider li { position: relative;  }
 
 .bannerText {
   position: absolute;
