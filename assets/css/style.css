@@ -260,7 +260,7 @@ h3 {
   text-transform: capitalize;
 }
 
-.latestProducts { padding-top : 113px; } 
+.latestProducts { padding-top : 66px; } 
 
 .latestProducts li { 
   -ms-flex-preferred-size: 31%;
@@ -500,7 +500,7 @@ footer a { color : #fad6cb; }
     flex-basis: 0;  }
 }  
 
-/*media query for 676px starts here*/
+/*media query for 767px starts here*/
 @media only screen and (max-width: 767px) {
   
   h2 {
