@@ -1,4 +1,3 @@
-
 $(window).on('load', function() {
 
 $('.bannerSlider').slick({
@@ -12,15 +11,15 @@ $('.bannerSlider').slick({
 
 $(document).ready(function() {
 
-	$('nav a').click(function() {
+	$('nav a').on('click',function() {
 		if(!$(this).hasClass('active')) {
       $("nav .active").removeClass("active");
       $(this).addClass("active");        
 		}
 	});
 
-  $(".hamburger").on("click",function(){
-  	$('nav').toggleClass('show');
+  $(".hamburger").on("click",function() {
+  	$('nav').toggleClass('showhide');
      $(".hamburger open").toggle();
 	});
 
