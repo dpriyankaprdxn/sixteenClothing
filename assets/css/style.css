@@ -125,7 +125,10 @@ header .wrapper {
   justify-content: space-between;
 }
 
-.menu { flex-basis: 46%; }
+.menu { 
+  -ms-flex-preferred-size: 46%;
+  flex-basis: 46%;
+}
 
 .hamburger {
   width: 32px;
@@ -258,7 +261,8 @@ h3 {
 .latestProducts { padding-top : 113px; } 
 
 .latestProducts li { 
-  flex-basis: 31%;
+  -ms-flex-preferred-size: 31%;
+  flex-basis: 31%;  
   padding-bottom : 20px;
   border : 1px solid #ccc;
   margin-bottom : 28px;
@@ -278,6 +282,7 @@ h3 {
 
 .latestProducts h3 + a:after {  
   content : "\f105";
+  margin-left: 3px;
   font-family: fontAwesome;
 }
 
@@ -307,7 +312,8 @@ h4 {
 }
 
 .ratingReview li{
-  flex-basis : 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;  
   border:none;
   margin-bottom : 0; 
 }
@@ -319,9 +325,10 @@ h4 {
 
 .Stars:before {
   content : "\f005";
+  margin-right: 3px;
+  float : right;
   color : #ef3e3b;
   font-family : FontAwesome;
-  float : right;
   text-indent : 0;
 }
 
@@ -372,6 +379,8 @@ ul.list { list-style-type: square; }
 .list + a {
   padding : 10px;
   border : 1px solid transparent;
+  -moz-border-radius   : 5px;
+  -webkit-border-radius : 5px;
   border-radius : 5px;
   margin-top : 10px;
   background : #ef3e3b;
@@ -385,7 +394,9 @@ ul.list { list-style-type: square; }
 .purchase .wrapper {
   box-sizing : border-box;
   padding : 18px 2%;
-  border-radius : 5px;
+  -moz-border-radius   : 5px;
+  -webkit-border-radius : 5px;
+  border-radius : 5px;  
   margin-bottom : 55px;
   background :#f7f7f7;
 }
@@ -395,6 +406,8 @@ ul.list { list-style-type: square; }
 .purchase li:last-child a {
   padding : 12px;
   border : 1px solid transparent;
+  -moz-border-radius   : 5px;
+  -webkit-border-radius : 5px;
   border-radius : 5px;
   margin-top : 5px;
   background : #ef3e3b;
@@ -456,9 +469,14 @@ footer a { color : #fad6cb; }
   
   nav { display : none; }
   
-  .latestProducts li { flex-basis : 47%; }
+  .latestProducts li { 
+    -ms-flex-preferred-size: 47%;
+    flex-basis: 47%;
+  }
   
-  .ratingReview li { flex-basis : 0; }
+  .ratingReview li { 
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;  }
 }  
 
 /*media query for 676px starts here*/
@@ -471,11 +489,21 @@ footer a { color : #fad6cb; }
   
   .slider span { font-size : 16px; }
   
-  .latestProducts ul { justify-content : center; }
+  .latestProducts ul { 
+    -webkit-box-pack : center;
+    -ms-flex-pack : center;
+    justify-content : center;
+  }
   
-  .latestProducts li { flex-basis : 60%; }
+  .latestProducts li { 
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+  }
   
-  .ratingReview li { flex-basis : 0; }
+  .ratingReview li { 
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
   
   .about ul li:first-child {
     float : none;
@@ -499,7 +527,14 @@ footer a { color : #fad6cb; }
 
   h2 { font-size: 16px; }
 
-  .latestProducts li { flex-basis : 95%; }
+  .latestProducts li {
+    -ms-flex-preferred-size: 95%;
+    flex-basis: 95%;
+  }
   
-  .ratingReview li { flex-basis : 0; }
+  .ratingReview li { 
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+
  }
