@@ -248,6 +248,7 @@ h2 {
 }
 
 /*banner style end*/
+/*latestProduct section style start*/
 h3 { 
   padding-bottom: 21px;
   font-size: 25px;
@@ -276,8 +277,8 @@ h3 {
 }
 
 .latestProducts h3 + a:after {  
-  content : "\f531";
-  font-family: "FontAwesome";
+  content : "\f105";
+  font-family: fontAwesome;
 }
 
 .latestProducts h4 { padding : 0 6%; }
@@ -329,7 +330,8 @@ h4 {
   font-size : 14px;
   font-weight : bold;
 }
-
+/*latest product style end*/
+/*about style start*/
 .about .wrapper { 
   padding : 20px 0 55px;
   border-bottom : 1px solid #ccc;
@@ -378,7 +380,8 @@ ul.list { list-style-type: square; }
 }
 
 .about img { float: right; }
-
+/*about section style end*/
+/*purchase section style start*/
 .purchase .wrapper {
   box-sizing : border-box;
   padding : 18px 2%;
@@ -398,7 +401,7 @@ ul.list { list-style-type: square; }
   color : #fff;
   font-size : 14px;
 }
-
+/*purchase section style end*/
 /*=================================
   main styling ends here
 =================================*/
@@ -458,6 +461,7 @@ footer a { color : #fad6cb; }
   .ratingReview li { flex-basis : 0; }
 }  
 
+/*media query for 676px starts here*/
 @media only screen and (max-width: 676px) {
   
   h2 {
@@ -469,7 +473,7 @@ footer a { color : #fad6cb; }
   
   .latestProducts ul { justify-content : center; }
   
-  .latestProducts li { flex-basis : 50%; }
+  .latestProducts li { flex-basis : 60%; }
   
   .ratingReview li { flex-basis : 0; }
   
@@ -487,3 +491,15 @@ footer a { color : #fad6cb; }
     float : none;
   }
 }
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+
+  .slider span { font-size: 12px;  }
+
+  h2 { font-size: 16px; }
+
+  .latestProducts li { flex-basis : 95%; }
+  
+  .ratingReview li { flex-basis : 0; }
+ }
