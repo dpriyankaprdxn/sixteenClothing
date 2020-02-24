@@ -199,6 +199,8 @@ nav a {
 
 .active {   border-bottom : 2px solid #ef3e3b;  }
 
+.showhide { display: block; }
+
 nav li:not(:last-child) a { margin-right: 50px; }
 
 /*=================================
