@@ -113,6 +113,7 @@ li {
 
 header { 
   padding-top: 30px;
+  position: relative;
   background: #000; 
 }
 
@@ -123,7 +124,6 @@ header .wrapper {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative;
 }
 
 .menu { 
@@ -197,7 +197,7 @@ nav a {
   text-transform: capitalize;
 }
 
-nav li:first-child a {   border-bottom : 2px solid #ef3e3b;  }
+.active {   border-bottom : 2px solid #ef3e3b;  }
 
 nav li:not(:last-child) a { margin-right: 50px; }
 
@@ -229,7 +229,7 @@ h2 {
   font-weight: bold;
 }
 
-.slick-dots {  bottom : 50px; }
+.slick-dots {  bottom : 3%; }
 
 .banner .wrapper {   width: 100%; }
 
@@ -293,6 +293,7 @@ h4 {
   color : #73b6e0;
   font-size : 17px;
   font-weight : bold;
+  cursor: default;
 }
 
 .latestProducts h4 span { 
@@ -307,9 +308,7 @@ h4 {
   line-height : 25px;
 }
 
-.latestProducts li div {
-  padding : 0 6%;
-}
+.latestProducts li div {  padding : 0 6%; }
 
 .ratingReview li{
   -ms-flex-preferred-size: 0;
@@ -355,7 +354,6 @@ h4 {
   line-height : 22px;
 }
 
-ul.list { list-style-type: square; }
 
 .about li { width : 48%; }
 
@@ -366,8 +364,10 @@ ul.list { list-style-type: square; }
 
 .list li {
   margin-bottom : 14px;
-  display : block;  
+  display : list-item;  
   color : #666;
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 .about .list li:first-child {   float : none; }
@@ -468,12 +468,25 @@ footer a { color : #fad6cb; }
   .hamburger { display : block; }
   
   nav { 
+    width: 100%;
+    border-top: 1px solid lightgray;
     display : none; 
     position: absolute;
+    top: 75px;
+    left : 0;
     z-index: 1;
+    background: #000;
+    text-align: center;
   }
 
   nav li { display: block; }
+
+  nav li:not(:last-child) a { margin-right: 0; }
+
+  nav a {
+    padding-bottom: 10px;
+    margin: 5px 0;
+  }
   
   .latestProducts li { 
     -ms-flex-preferred-size: 47%;
@@ -486,14 +499,16 @@ footer a { color : #fad6cb; }
 }  
 
 /*media query for 676px starts here*/
-@media only screen and (max-width: 676px) {
+@media only screen and (max-width: 767px) {
   
   h2 {
     margin-top : 8px;
     font-size : 26px; 
   }
   
-  .slider span { font-size : 16px; }
+  .latestProducts { padding-top: 40px; } 
+
+  .bannerText span { font-size : 16px; }
   
   .latestProducts ul { 
     -webkit-box-pack : center;
@@ -524,12 +539,17 @@ footer a { color : #fad6cb; }
     max-width :518px;
     float : none;
   }
+
+  .purchase li:last-child {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /*media query for 540px starts here*/
 @media only screen and (max-width: 540px) {
 
-  .slider span { font-size: 12px;  }
+  .bannerText span { font-size: 12px;  }
 
   h2 { font-size: 16px; }
 
