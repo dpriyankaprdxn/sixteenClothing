@@ -445,18 +445,22 @@ footer a { color : #fad6cb; }
 /*media query for hover remove below 1024px*/
 @media only screen and (min-width: 1024px) {
   
-  nav a:hover {   border-bottom : 2px solid #ef3e3b; }
+  nav a:hover { border-bottom : 2px solid #ef3e3b; }
   
   .latestProducts h3 + a:hover { color: #366b98; }
   
-  .about a:hover, footer a:hover { color : #ef3e3b; }
+  .about a:hover,
+   .purchase a:hover, 
+   footer a:hover,
+   .ratingReview:last-child a:hover { color : #ef3e3b; }
   
   .purchase li:last-child a:hover , .list + a:hover {
-      border : 1px solid #ef3e3b;
+    border : 1px solid #ef3e3b;
     background : #fff;
     color : #ef3e3b;
-
   }
+
+  .Stars:before:hover { background: #f6bc06; }
 
 }
 
@@ -542,7 +546,7 @@ footer a { color : #fad6cb; }
     float : none;
   }
 
-  .purchase li:last-child {
+  .purchase li {
     width: 100%;
     text-align: center;
   }
