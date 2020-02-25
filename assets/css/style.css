@@ -447,20 +447,21 @@ footer a { color : #fad6cb; }
   
   nav a:hover { border-bottom : 2px solid #ef3e3b; }
   
-  .latestProducts h3 + a:hover { color: #366b98; }
+  .latestProducts h3 + a:hover,
+  .ratingReview:last-child a:hover { color: #366b98; }
   
   .about a:hover,
-   .purchase a:hover, 
-   footer a:hover,
-   .ratingReview:last-child a:hover { color : #ef3e3b; }
+  .purchase a:hover, 
+  footer a:hover { color : #ef3e3b; }
   
-  .purchase li:last-child a:hover , .list + a:hover {
+  .purchase li:last-child a:hover , 
+  .list + a:hover {
     border : 1px solid #ef3e3b;
     background : #fff;
     color : #ef3e3b;
   }
 
-  .Stars:before:hover { background: #f6bc06; }
+  .Stars:hover::before { color : #f6bc06; }
 
 }
 
